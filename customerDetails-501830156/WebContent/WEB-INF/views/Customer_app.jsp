@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>All Customer Details</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -19,6 +19,9 @@ table, th, td {
 	border: 1px solid black;
 	width: 50%;
 	height: 30px;
+	padding-left:10px;
+	padding-top:10px;
+	padding-right: 10px;
 }
 
 body {
@@ -27,6 +30,7 @@ body {
 
 div.styling {
 	text-align: center;
+	padding-top: 20px;
 
 }
 </style>
@@ -80,7 +84,6 @@ div.styling {
 
 	<c:if test="${user.profile == 'admin' || user.profile == 'mgr'}">
 		<div class="styling"><a href="Customer">addcustomer</a></div>
-	</div>
 	</c:if>
 </body>
 </html>
